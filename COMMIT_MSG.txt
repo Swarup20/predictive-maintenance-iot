@@ -1,0 +1,9 @@
+Initial commit for the Geospatial Real Estate Valuation project.
+
+- Set up the project structure
+- Added initial source code and configuration files
+- Included dataset preprocessing workflow
+- Prepared the foundation for spatial embedding generation
+- Organized project directories for model development and evaluation
+
+This commit establishes the base implementation for the real estate valuation system using geospatial data and machine learning.
