@@ -1,51 +1,175 @@
-# geospatial-real-estate-valuation
-"Real estate valuation engine using spatial embeddings and GNNs to model neighborhood price dependencies."
+# Contextual Predictive Maintenance (IoT Edge AI)
 
-PROJECT 3: GEOSPATIAL REAL ESTATE VALUATION
-Repo: github.com/Swarup20/geospatial-real-estate-valuation
-Team: Mani, Manoj, Suriya, Swarup
-Branches: dev-mani, dev-manoj, dev-suriya, dev-swarup
+## Internship Project
+Infotact Solutions — DSML Internship
 
-===========================================
-WEEK 1 — Data Acquisition & Exploration
-Goal: Clean geospatial dataset + first visualizations
-===========================================
-Swarup (Lead) - Source dataset (King County Housing or similar), initial GeoPandas cleaning
-Mani           - Haversine distance calculations, lat/long validation
-Manoj          - Exploratory data analysis - price distributions, missing values
-Suriya         - Build interactive maps (Folium/Kepler.gl) showing spatial price trends
+---
 
-===========================================
-WEEK 2 — Feature Engineering & Baseline Model
-Goal: XGBoost baseline + documented weaknesses
-===========================================
-Mani (Lead)   - Feature engineering (house age, distance to city center, amenity proximity)
-Manoj         - Train/tune XGBoost baseline model
-Suriya        - Evaluate baseline - MAPE/RMSE, error analysis by region
-Swarup        - Document failure cases (e.g. gentrifying neighborhoods) with visuals
+# Project Overview
 
-===========================================
-WEEK 3 — Graph Construction & Embeddings
-Goal: KNN graph + spatial embeddings
-===========================================
-Suriya (Lead) - Build KNN graph (houses = nodes, edges = nearest neighbors)
-Swarup        - Generate spatial embeddings from graph structure
-Mani          - Validate graph quality (edge weights, neighbor sanity checks)
-Manoj         - Visualize the graph structure + embedding clusters
+This project focuses on building an advanced Predictive Maintenance system using:
 
-===========================================
-WEEK 4 — GNN/Attention Model & Deployment
-Goal: Final model + Streamlit app
-===========================================
-Manoj (Lead)  - Build GNN/attention-based valuation model (PyTorch/DGL)
-Suriya        - Compare final model MAPE vs XGBoost baseline
-Swarup        - Build Streamlit app skeleton
-Mani          - Add price-disparity map + top-5-neighbors feature to app
+- IoT telemetry data
+- Contextual external signals
+- Time-series feature engineering
+- Imbalanced machine learning
+- LightGBM classification
 
-===========================================
-RULES
-===========================================
-- Everyone commits daily to their own dev-<name> branch
-- Commit format: feat: <what you did today> (fixes #<issue number>)
-- Merge to main every 1-2 days via Pull Request
-- No last-day mega-commits (auto-disqualification risk)
+The goal is to predict machine failures before they happen.
+
+---
+
+# Week 1 — Day 1 Progress
+
+## Completed Tasks
+
+### Repository Setup
+- Initialized GitHub repository
+- Created individual working branch
+- Added project structure
+- Configured .gitignore
+- Added requirements.txt
+
+### Project Planning
+- Reviewed official execution handbook
+- Understood Week 1 objectives
+- Planned Kaggle workflow
+- Prepared GitHub tracking structure
+
+### Dataset Planning
+Selected dataset:
+- AI4I Predictive Maintenance Dataset
+
+Planned features:
+- Rolling mean
+- Rolling standard deviation
+- Signal variance
+- Feature engineering
+
+---
+
+## Week 1 — Day 2 Progress
+
+### Completed
+- Exploratory Data Analysis
+- Correlation heatmap
+- Feature distributions
+- Advanced rolling window features
+- Statistical feature engineering
+- Data cleaning improvements
+
+### Added Features
+- Rolling mean
+- Rolling std
+- Rolling min/max
+- Variance-based analysis
+
+## Week 1 — Day 3 Progress
+
+### Completed
+
+- Built baseline Random Forest model
+- Performed train-test split
+- Generated classification report
+- Created confusion matrix
+- Analyzed feature importance
+
+### New Features
+
+- Temperature difference
+- Power proxy feature
+
+### Outcome
+
+Successfully trained first predictive maintenance model and evaluated performance.
+
+## Week 1 — Day 4 Progress
+
+### Completed
+
+- Studied class imbalance
+- Applied SMOTE oversampling
+- Trained improved Random Forest model
+- Compared model performance
+- Evaluated confusion matrix
+
+### Outcome
+
+Improved handling of rare machine failure cases through data balancing techniques.
+
+## Week 1 — Day 5 Progress
+
+### Completed
+
+- Simulated external contextual data
+- Ambient temperature generation
+- Factory load simulation
+- Humidity simulation
+- Contextual feature engineering
+
+### Ablation Study
+
+Compared:
+
+1. Internal telemetry only
+2. Telemetry + contextual signals
+
+### Outcome
+
+Verified impact of contextual variables on predictive maintenance performance.
+
+# Week 1 Objectives
+
+- IoT telemetry ingestion
+- Signal processing
+- Rolling window feature engineering
+- Exploratory data analysis
+- Baseline preprocessing pipeline
+
+---
+
+# Tech Stack
+
+| Tool | Purpose |
+|------|----------|
+| Python | Development |
+| Pandas | Data Processing |
+| NumPy | Numerical Operations |
+| Matplotlib | Visualization |
+| Seaborn | Visualization |
+| LightGBM | Modeling |
+| Kaggle | Training Environment |
+| GitHub | Version Control |
+
+---
+
+# Planned Weekly Roadmap
+
+## Week 1
+- Dataset ingestion
+- Rolling statistics
+- Signal processing
+
+## Week 2
+- Contextual data fusion
+- External feature integration
+
+## Week 3
+- LightGBM + SMOTE
+- Stratified cross-validation
+
+## Week 4
+- Noise sensitivity analysis
+- Threshold tuning
+- Evaluation dashboard
+
+---
+
+# GitHub Workflow
+
+- Daily commits
+- Semantic commit messages
+- Individual branch development
+- Weekly progress tracking
+
+---
